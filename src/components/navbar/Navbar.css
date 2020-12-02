@@ -1,0 +1,51 @@
+nav.navbar.bg-light {
+  position: fixed;
+  width: 97%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+nav.navbar {
+  flex-direction: column;    
+}
+
+nav .menu-wrapper {
+  align-self: stretch;
+}
+
+nav ul.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+@media (min-width: 576px) {
+ 
+  nav ul.navbar-nav {
+    justify-content: center;
+  }
+
+  nav ul.navbar-nav li {
+    margin: 0 6px;
+  }
+
+}
+
+@media (min-width: 868px) {
+  
+  nav.navbar {
+    flex-direction: row;
+    justify-content: space-between;    
+  }
+
+  nav .menu-wrapper {
+    align-self: unset
+  }
+
+}
