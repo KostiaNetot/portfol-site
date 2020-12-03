@@ -5,14 +5,21 @@
       "name": "News Blog",
       "description": "News blog, with admin panel. Creation of news, categories and editioning.",
       "technologies": ["React", "Redux", "Semantic UI", "Node.js",  "Express", "MongoDB"],
-      "screenshot": "./img1.png" 
+      "images": ["./img/news01.png", "./img/news02.png", "./img/news03.png", "./img/news04.png", "./img/news05.png", "./img/news07.png", "./img/news08.png"]
     },
     {
       "id": "1606849384613",
       "name": "Estrellas Brillantes",
-      "description": "Site of online festival-contest.",
+      "description": "Site of online festival-contest. Layouting from PSD. Implemented contact form with Telegram notification. ",
       "technologies": ["HTML", "CSS", "JavaScript", "PHP"],
-      "screenshot": "./img2.png" 
-    }
+      "images": ["./img/estrellas.png"]
+    },
+    {
+      "id": "1606988594952",  
+      "name": "Repo Search",
+      "description": "App to find repositories from GitHub by name. ",
+      "technologies": ["JavaScript", "HTML", "SASS"],
+      "images": ["./img/repo01.png", "./img/repo02.png", "./img/repo03.png"]
+    }    
   ]
 }

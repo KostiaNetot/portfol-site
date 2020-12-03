@@ -1,3 +1,8 @@
+.selected {
+  /* color: #343a40; */
+  color: red;
+} 
+
 nav.navbar.bg-light {
   position: fixed;
   width: 97%;

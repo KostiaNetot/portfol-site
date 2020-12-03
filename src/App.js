@@ -6,7 +6,8 @@ import MainPage from './pages/main-page/MainPage';
 import Footer from './components/footer/Footer';
 import AboutPage from './pages/about-page/AboutPage';
 import PortfolioPage from './pages/portfolio-page/PortfolioPage';
-import ContactPage from './pages/contact-page/ContactPage';
+// import ContactPage from './pages/contact-page/ContactPage';
+import ProjectPage from './pages/project-page/ProjectPage';
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
       <Router>
         <Navbar/>
         <div className="big-wrapper">
-          <Route path='/' exact component={ MainPage } />
-          <Route path='/about' exact component={ AboutPage } />
-          <Route path='/portfolio' exact component={ PortfolioPage } />
-          <Route path='/contact' exact component={ ContactPage } />
+          <Route exact path='/' component={ MainPage } />
+          <Route path='/about' component={ AboutPage } />
+          <Route path='/portfolio' component={ PortfolioPage } />
+          <Route exact path='/project/:id' component={ ProjectPage } />
           <Footer/>
         </div>
       </Router>

@@ -1,0 +1,30 @@
+.project-page .proj-screen {
+  margin-bottom: 6px;
+  transition: .5s;
+}
+
+.project-page .proj-screen:hover {
+  transform: scale(1.04);
+  box-shadow: -4px 0px 15px -5px rgba(0,0,0,0.81);
+}
+
+.project-page .bages-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.project-page .bages-wrapper .badge {
+  margin: 4px;
+}
+
+.project-page .description-column {
+  position: relative;
+}
+
+.project-page .description-wrapper {
+  position: fixed;
+  top: 8.5rem;
+  left: 2rem;
+  width: 365px;
+}

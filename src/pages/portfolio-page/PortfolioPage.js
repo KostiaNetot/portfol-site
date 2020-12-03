@@ -1,32 +1,32 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import './PortfolioPage.css';
+// import DataService from '../../services/DataService';
+import { getProjects } from './../../services/DataService';
+import ProjectCard from './../../components/project-card/ProjectCard';
 
 export default function PortfolioPage() {
   const [ projects, setProjects ] = useState(null);
-
-  const getProjects = async () => {
-    const response = await axios.get('./data.json')
-      .catch(err => console.log("Error: ", err));
-
-    if (response && response.data) {
-      console.log(response.data);
-    } 
-  };
+  // const [ images, setImages ] = useState(null);
 
   useEffect(() => {
-    getProjects();   
-  //   axios.get('./data.json')
-  //  .then((res)=>{
-  //    console.log(res.data);
-  //  }).catch((err)=>{
-  //    console.log(err);
-  //  });
+  
+    getProjects().then(res => {
+      setProjects(res.projects);
+    });
 
   }, []);
 
     return (
-        <div>
-          PortfolioPage      
+        <div className="portfolio-page container">
+          <div className="row">  
+            {projects && projects.map(proj => {
+              return (
+              
+                <ProjectCard key={proj.id} proj={proj} />
+                
+              )
+            })}  
+          </div>
         </div>
     )
 }

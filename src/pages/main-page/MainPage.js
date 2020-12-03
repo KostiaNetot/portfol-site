@@ -1,6 +1,6 @@
 import React from 'react';
 import './MainPage.css';
-import main from './main.jpg';
+import main from './main.png';
 
 export default function MainPage() {
     return (
@@ -11,7 +11,10 @@ export default function MainPage() {
                 <h6 className="mb-11 text-uppercase">Hello, I am</h6>
                 <h1 className="mb-30 text-uppercase">Kostia Aleksieienko</h1>
                 <h5 className="mb-11 font-16 line-height-28">React Developer</h5>
-                <button type="button" className="btn btn-primary btn-lg">Contact</button>
+                <blockquote className="blockquote">
+                  <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <footer className="blockquote-footer">Some wise <cite title="Source Title">Qute</cite></footer>
+                </blockquote>
               </div>
             </div>
 
